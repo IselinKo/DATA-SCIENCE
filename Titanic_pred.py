@@ -13,6 +13,7 @@ train_data.head()
 test_data = pd.read_csv("test.csv")
 test_data.head()
 
+
 women = train_data.loc[train_data.Sex == "female"]["Survived"]
 rate_women = sum(women)/len(women)
 
